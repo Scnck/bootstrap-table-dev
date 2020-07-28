@@ -262,10 +262,12 @@ $.BootstrapTable = class extends $.BootstrapTable {
           scrollTo += $(el).outerHeight(true)
         })
 
+        /*
         const $targetColumn = this.$body.find(`> tr:not(.groupBy):eq(${options.value})`)
         $targetColumn.prevAll('.groupBy').each((i, el) => {
           scrollTo += $(el).outerHeight(true)
         })
+        */
 
         this.$tableBody.scrollTop(scrollTo)
         return
