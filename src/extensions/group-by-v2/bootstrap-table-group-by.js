@@ -265,7 +265,7 @@ $.BootstrapTable = class extends $.BootstrapTable {
         $targetColumn.prevAll('.groupBy').each((i, el) => {
           scrollTo += $(el).outerHeight(true)
         })
-
+alert(scrollTo)
         this.$tableBody.scrollTop(scrollTo)
         return
       }
